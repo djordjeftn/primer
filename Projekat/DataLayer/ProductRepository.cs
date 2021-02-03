@@ -45,7 +45,7 @@ namespace DataLayer
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
                 sqlCommand.CommandText =
-                    string.Format("INSERT INTO Products VALUES ('{0}', '{1}', {2})",
+                    string.Format("INSERT INTO Products VALUES ('{0}', '{1}', '{2}')",
                         b.Name, b.Description, b.ExpiryDate);
 
                 sqlConnection.Open();
