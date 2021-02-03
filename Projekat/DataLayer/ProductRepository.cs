@@ -30,7 +30,7 @@ namespace DataLayer
                     b.Id = sqlDataReader.GetInt32(0);
                     b.Name = sqlDataReader.GetString(1);
                     b.Description = sqlDataReader.GetString(2);
-                    b.ExpiryDate = sqlDataReader.GetString(3);
+                    b.ExpiryDate = sqlDataReader.GetDateTime(3);
 
                     lista.Add(b);
                 }
